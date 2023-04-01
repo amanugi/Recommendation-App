@@ -1,0 +1,10 @@
+
+
+    <%- include("./components/navbar",{user:user,userInfo:userInfo,admin:admin,isPrime:isPrime }) %>
+    <%- include('./components/carousel.ejs',{carouselData:carouselData}) %>
+    <%- include('./components/muticarousel.ejs',{title:"Playlist Recommended for You" ,data:userRecommended}) %>
+    <%- include('./components/muticarousel.ejs',{title:"Specials & Latest Movies" ,data:moviesData}) %>
+    <%- include('./components/muticarousel.ejs',{title:"Best In Sports" ,data:sportsData}) %>
+    <%- include('./components/muticarousel.ejs',{title:"Live News" ,data:newsData}) %>
+    <%- include('./components/muticarousel.ejs',{title:"Animated Adventure" ,data:cartoonsData}) %>
+    <%- include('./components/footer.ejs') %>

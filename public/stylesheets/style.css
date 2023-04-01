@@ -1,0 +1,261 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /* padding-top:65px; */
+  background-color: #0b101b;
+}
+/* Loader */
+#loading{
+  width: 100%;
+  height: 100vh;
+  background: rgb(14, 16, 31) url('../images/loader.gif') no-repeat center;
+  position: fixed;
+  z-index:99;
+}
+
+/* Navbar (navbar.ejs) */
+nav{
+  background-color:#131a26;
+  text-align: center;
+  position: fixed;
+}
+.navbar{
+  padding-left:7%;
+  padding-right:5%;
+  padding-top:1.5%;
+  padding-bottom:1.5%;
+  text-align: center;
+}
+.navbar-light .navbar-brand{
+  color: floralwhite; 
+}
+.navbar-light .navbar-brand:hover{
+  color: floralwhite; 
+}
+
+/* Footer */
+.footer-class {
+  padding-top:5%;
+  padding-left:1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+}
+.footer-header{
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 0 20px 0 0;
+  color: #cdcdcf;
+  text-decoration: none;
+}
+.footer-content{
+  font-size: 12px;
+  line-height:1.8;
+  color: #9c9ca0;
+}
+.footer-header:hover{
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 0 20px 0 0;
+  color: #cdcdcf;
+  text-decoration: none;
+}
+.fab{
+  color: #b1c3d3;
+}
+.fab:hover{
+  color: #084a8b;
+}
+ /* for active elements */
+ #navbar{
+   /* position: fixed; */
+    margin:0;
+    width: 100%;
+    background-color: #131a26;
+ }
+ .navbarWrapper{
+   width: 100%;
+   height: 100%;
+ }
+.navbar-light .navbar-nav .active > .nav-link { 
+  color:#e4e5e6;
+  font-size:16px;
+  font-weight: 400;
+}
+.navbar-light .navbar-nav .nav-link{
+  color:#e4e5e6;
+  font-size:16px;
+  font-weight: 400;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+  color:floralwhite;
+  font-size:16px;
+  font-weight: 400;
+}
+nav ul li{
+  padding-left:5%;
+  padding-right:5%;
+}
+.login{
+  padding:5px 3%;
+  border: none;
+  border-radius:16px;
+  background-color: rgb(62, 114, 226);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+.login:hover{
+  padding:5px 3%;
+  border: none;
+  border-radius:16px;
+  background-color: rgb(62, 114, 226);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+/* Login Modal  */
+.modal-content{
+  background-color: #131b2a;
+  color: white;
+}
+.modal-header {
+  border-bottom: 0 none;
+}
+.loginButtons{
+  padding-top:14%;
+  padding-bottom: 10%;
+}
+.modal-footer {
+  border-top: 0 none;
+}
+.login-button{
+  width: 70%;
+  border-radius: 5px;
+  border :1px  solid #3e80e0;
+  background-color: #162840
+}
+.login-button:hover{
+  width: 70%;
+  border-radius: 5px;
+  border :1px  solid #3e80e0;
+  background-color: #162840;
+}
+/* User Icon */
+
+.user-icon > img{
+  height:40px;
+  width: 40px;
+  border-radius: 100%;
+  border:3px solid #3e80e0;
+}
+
+/* Carousel Items */
+@media screen and (max-width: 770px) {
+  .caraousel-item-displaynot{
+    display: none;
+  }
+  .hide-subscribe-email{
+    display: none;
+  }
+}
+.carousel-images {
+  width:50%;
+  /* 420px */
+  height:420px; 
+  /* object-fit: cover; */
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.carouselWrapper{ 
+  
+  padding-top:2%;
+  padding-bottom: 2%;
+}
+.carousel-item{
+  padding-left:3%;
+  padding-right: 3%; 
+}
+.padding-0{
+  padding-right:0;
+  padding-left:0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.carousel-header{
+  color: #ffffff;
+  font-weight: 600;
+  padding-left: 14%;
+  padding-top:20%;
+}
+.carousel-body{
+  color: white;
+  font-weight: 100;
+  padding-left: 14%;
+  padding-top:10%;
+  padding-right: 2%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  line-height: 23px;
+}
+
+/* multi CarouselWrapper */
+.multiCarouselWrapper{
+  padding-left:3%;
+  height: 100%;
+}
+.card{
+  width: 100%;
+  border: 0px;
+  border-radius: 7px;
+}
+.multi-carousel-card{
+  height:100%;
+  width: 100%;
+  border: 0px;
+
+  
+}
+
+.multi-carousel-card:hover{
+  height:100%;
+  width: 100%;
+  border: 0px;
+  opacity: 0.4;
+}
+.multi-carousel-card img  {
+  border-radius: 7px;
+}
+.card-body{
+  padding:0;
+  height: 100%;
+  border-radius: 7px;
+  /* object-fit: cover; */
+}
+.multi-carousel-slide-button{
+  color: white;
+}
+
+/* Movie Cards */
+.movieCardWrapper{
+  padding-left:3%;
+  padding-right:3%;
+  height: 100%;
+}
+.movie-cards{
+  border-radius: 10px;
+  padding-top:2%;
+  padding-bottom: 2%;
+}
+
+.movie-card-images:hover{
+  opacity: 0.4;
+}
+
+/* User account */
+.favorite-list{
+  background-color: white;
+  padding-top: 7%;
+  padding-bottom: 7%;
+}

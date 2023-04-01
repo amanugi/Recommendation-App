@@ -1,0 +1,20 @@
+<div class="multiCarouselWrapper">
+    <h5 style="color: white;font-weight: 600"><%= title%></h5>
+    <div class="owl-carousel  owl-theme" style="padding-top:5px">
+        <%data.forEach(function(item){%>
+          <a href="/home/<%= item.path %>" >
+              <div class="card multi-carousel-card " >
+                <div class="card-body" style="position: relative;">
+                  <% var value = "Premium"%>
+                  <%if(!item.isPrime){%>
+                    <%value="Non Premium"%>
+                  <%}%>
+                  <img src="<%= item.imageUrl %>" style="height: 150px" title="<%= value%>"/>
+                  <!-- <a  style="padding-bottom: -10px"  class="card-link">Card link</a> -->
+                  <!--<a href="#" class="card-link">Another link</a> -->
+                </div>
+              </div>
+          </a>
+        <%})%>
+    </div>
+</div>

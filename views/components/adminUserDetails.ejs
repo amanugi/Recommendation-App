@@ -1,0 +1,35 @@
+<div class="user-details">
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+                <table class="table">
+                        <thead  class="thead-dark">
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col">User Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Prime Member</th>
+                            <th scope="col">Edit</th>
+                            <th scope="col">Remove User</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <% data.forEach(function(item){%>
+                                <tr>
+                                    <td><img style="height:25px;width:25px;border-radius: 100%" src="<%= item.photo %>" /> </td>
+                                    <td><%= item.username %> </td>
+                                    <td><%= item.email %></td>
+                                    <td><% if(item.isPrime){%>
+                                        <i style="color: rgb(11, 179, 11);"class="fas fa-check-circle fa-2x"></i>
+                                    <%}else{%>
+                                        <i  style="color: red;" class="fas fa-times-circle fa-2x"></i>
+                                   <% } %></td>
+                                    <td><a href="#" class="btn btn-outline-success" data-toggle="modal" data-target="#PrimeEdit<%=item.id%>"><i class="fas fa-user-edit"></i></a></td>
+                                    <td><a class="btn btn-outline-danger" href="/admin/del/<%= item.id %>"><i class="far fa-trash-alt"></i></a></td>
+                                    <%- include('./adminPrimeEditModal.ejs',{item:item}) %>
+                                </tr>
+                            <%}); %>
+                        </tbody>
+                </table>
+        </div>
+    </div>
+</div>
